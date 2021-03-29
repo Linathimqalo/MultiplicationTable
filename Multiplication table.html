@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+body {
+	margin:auto;
+	width:700px;
+}
+table {
+	text-align:center;
+	border:blue 1px solid;
+}
+tr {
+	height:30px;
+ 
+}
+td {
+	width:50px;
+	font-size:18px;
+	font-family:cursive;
+	padding:7px;
+	color:blue;
+}
+td:hover {
+	width:50px;
+	font-size:18px;
+	font-family:cursive;
+	padding:7px;
+	background:blue;
+	color:white;
+}
+h2 {
+	text-align:center;
+	color:red;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javaScript">
+document.write("<center><table border='1px' width='100%' cellspacing='2' cellpadding='2' style='cursor:pointer;'>");
+num1 = prompt("Please enter the rows: ");
+num2 = prompt("Please enter the columns: ");
+for(var a = 1; a <= num1; a++) {
+ 
+document.write("<tr>");
+for(var b = 1; b <= num2; b++) {
+document.write("<td>" 
+		+ a*b + "</td>");
+	}
+	document.write("</tr>");
+}
+document.write("</table></center>");
+</script>
+</body>
+<html>
